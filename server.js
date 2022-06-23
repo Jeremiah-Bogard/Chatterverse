@@ -9,6 +9,8 @@ const io = require('socket.io')(http, {
 
 let users = {}
 
+app.use(express.static('public'));
+
 const PORT = process.env.PORT || 3000;
 
 http.listen(PORT, () => {
