@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect('https://chatterverse.herokuapp.com');
 const params = new URLSearchParams(window.location.search);
 const name = params.get('name');
 const botName = 'ChatCord Bot';
