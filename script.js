@@ -1,7 +1,7 @@
 const socket = io.connect('https://chatterverse.herokuapp.com');
 const params = new URLSearchParams(window.location.search);
 const name = params.get('name');
-const botName = 'ChatCord Bot';
+const botName = 'Chatterverse Bot';
 const chatContainer = document.querySelector('#chat-container');
 const chatForm = document.querySelector('#chat-form');
 const message = document.querySelector('#chat-form-message');
