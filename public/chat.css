@@ -1,0 +1,50 @@
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+
+    --theme: 200
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+}
+#chat-container {
+    overflow-y: scroll;
+}
+.chat {
+    background-color: hsla(var(--theme), 100%, 30%, 0.5);
+    margin: 7px;
+    padding: 10px;
+}
+.chat:nth-child(2n) {
+    background: transparent;
+}
+.chat p {
+    text-indent: 2em;
+}
+#chat-form {
+    background-color: hsl(var(--theme), 100%, 30%);
+}
+#chat-form-container {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    margin: auto auto;
+    max-width: 600px;
+    width: 100%;
+}
+#chat-form input {
+    margin: 15px;
+    margin-right: 0;
+    padding: 7px;
+}
+#chat-form button {
+    background-color: hsl(var(--theme), 100%, 15%);
+    color: #fff;
+    border: none;
+    margin: 15px;
+    margin-left: 0;
+    padding: 7px;
+}

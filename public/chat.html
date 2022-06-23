@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatCord</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./chat.css">
+</head>
+<body>
+    <div id="chat-container"></div>
+    <form id="chat-form">
+        <div id="chat-form-container">
+            <input id="chat-form-message" type="text" placeholder="Say something..." required />
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
+</html>
