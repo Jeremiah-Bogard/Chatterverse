@@ -30,6 +30,12 @@ chatForm.addEventListener('submit', (e) => {
     message.value = '';
 });
 
+socket.on('send-prev-messages', messagesArr => {
+    for(let i = 0; i < messagesArr.length; i++) {
+        addMessage(messagesArr[i].message, messagesArr[i].name);
+    }
+});
+
 socket.on('user-joined', (user) => {
     addMessage(`${user} has joined the chat!`, botName);
 });
